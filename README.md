@@ -28,7 +28,8 @@ The dataset includes the following files:
     step5：create a dataset with the average of each variable for each activity and each subject.
     step6: write output datasets into separate txt files.
 
-- 'HCRData.txt': a complete dataset contains both training and test data,
-    also has descriptive variable names and activity label names.
+- 'HCRData.txt': a complete dataset contains only the mean() and std() measurements
+of the merged training and test datasets. Descriptive variable names and activity label
+ names were also added.
 
-- 'Avg_HCRData_for_Act_Sub.txt': average of each variable for each activity and each subject in HCRData
+- 'Avg_HCRData_for_Act_Sub.txt'(final output): average of each variable for each activity and each subject in HCRData
