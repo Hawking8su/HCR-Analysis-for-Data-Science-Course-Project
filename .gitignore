@@ -1,4 +1,4 @@
 *.RData
 *.Rhistory
 *.zip
-dataset
+UCI HAR Dataset/
