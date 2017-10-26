@@ -1,35 +1,18 @@
-HCRData Analysis for Getting and Cleaning Data Course Project
-Version 1.0
-==================================================================
-Hawking Liu
-lzhhawking@126.come
-==================================================================
+# Getting and Cleaning Data Course Project
 
-This project mainly cleans the HCR data in the dataset directory.
-Detailed explanation of the HCR data could be found in the README.txt
-inside the dataset directory.
+## This repo includes the following files:
 
-The 'run_analysis.R' file contains the R script to carry out the cleaning
-and analyzing steps. The two output datasets are "HCRData.txt" and
-"Avg_HCRData_for_Act_Sub.txt"
+* 'README.md':
 
-The dataset includes the following files:
-=========================================
-- 'README.md':
+* 'CodeBook.txt': description of variables in tidyData.txt data set.
 
-- 'CodeBook.txt': describe variables in both HCRData dataset and
-  Avg_HCRData_for_Act_Sub dataset.
+* 'run_analysis.R': this R script does the following steps:
+    - Download and unzip source data if doesn't exist.
+    - Read and merge test and training data sets to one data set.
+    - Use descriptive activity names to name the activities in the data set.
+    - Extract only the measurements on the mean and standard deviation for each measurement.
+    - Appropriately label the data set with descriptive variable names.
+    - Create a second, independent tidy set with the average of each variable for each activity and each subject.
+    - Write the data set to the tidyData.txt file.
 
-- 'run_analysis.R':
-    step1: read and combine test and training datasets
-    step2: assign measurements names and extract only mean() and std() measurements
-    step3: combine subject index, label index and extracted Data together
-    step4: match descriptive activity label name based on label index
-    step5：create a dataset with the average of each variable for each activity and each subject.
-    step6: write output datasets into separate txt files.
-
-- 'HCRData.txt': a complete dataset contains only the mean() and std() measurements
-of the merged training and test datasets. Descriptive variable names and activity label
- names were also added.
-
-- 'Avg_HCRData_for_Act_Sub.txt'(final output): average of each variable for each activity and each subject in HCRData
+* tidyData.txt: independent tidy set with the average of each variable for each activity and each subject.
